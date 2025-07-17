@@ -1,0 +1,243 @@
+/* ==== Загальні стилі ==== */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f1efe6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #5B3218;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ==== Header ==== */
+
+.logo{
+    margin-top: 24px;
+}
+
+
+
+.menu-nav{
+    display:flex;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.nav-link{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #72a853;
+        padding: 12px 0;
+        cursor: pointer;
+        display: block;
+}
+.nav-link:hover {
+    color: #fccb5a;
+}
+.nav-link:focus {
+    color: #fccb5a;
+}
+
+/* .header {
+    display: flex;
+    justify-content: center;
+    background-color: #72A853;
+    border-bottom: 1px solid #582d14;
+} */
+
+
+
+/* ====== hero  ===== */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background: #72a853;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.hero-title{
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        text-align: center;
+        /* max-width: 496px; */
+        margin-bottom: 48px;
+}
+
+.hero-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 364px;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.hero-img{
+    border-radius: 4px;
+}
+
+
+/* ====  section about ===== */
+
+.about{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.about-title{
+font-weight: 700;
+font-size: 24px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-align: center;
+margin-bottom: 24px;
+}
+
+.about-text{
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    /* max-width: 364px; */
+    margin-bottom: 24px;
+    text-align: justify;
+    color: #5B3218;
+}
+
+.skills{
+    background-color: #fccb5a;
+    border-radius: 4px;
+    padding: 24px;
+    
+}
+
+.skills-title{
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+}
+
+.skills-list{
+    color: #5B3218;
+    list-style-type: square;
+}
+
+.skills-list-text{
+    margin-top: 8px;
+    color: #5B3218;
+}
+
+
+/* === certificates === */
+
+.certificates-img{
+    width: 156px;
+}
+
+
+.certificates {
+    padding: 30px 15px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+}
+
+.certificates-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.logos {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+}
+
+.logos img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logos img.active {
+    display: block;
+}
+
+.pagination-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.pagination-buttons button {
+    padding: 6px 16px;
+    font-size: 10px;
+    background-color: #72a853;
+    color: #5B3218;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pagination-buttons button:hover {
+    background-color: #fccb5a;
+}
+
+/* Додатково: центрування кнопок на вузькому екрані */
+/* @media (max-width: 400px) {
+    .pagination-buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+} */
