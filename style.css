@@ -43,10 +43,24 @@ img {
     padding-right: 15px;
 }
 
-/* ==== Header ==== */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 16px;
+    }
+}
 
-.logo{
-    margin-top: 24px;
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+}
+
+/* ==== Header ==== */
+.header{
+    padding-top: 16px;
+    
 }
 
 .menu-nav{
@@ -72,6 +86,38 @@ img {
     color: #5B3218;
 }
 
+@media screen and (min-width: 768px){
+    .logo{
+        width: 148px;
+        height: auto;
+        margin-top: 0;
+    }
+
+        .heder-wraper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        /* padding-bottom: 16px; */
+        
+    }
+
+    .header {
+        padding-bottom: 16px;
+    
+    }
+
+    .nav-link{
+        font-size: 24px;
+    }
+
+    .menu-nav{
+        
+    }
+
+
+
+}
 
 /* ====== hero  ===== */
 
@@ -105,6 +151,22 @@ img {
 
 .hero-img{
     border-radius: 4px;
+}
+
+@media screen and (min-width: 768px){
+    .section-hero{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .hero-img{
+        min-width: 420px;
+    }
+
+    .hero-title{
+        margin-top:  36px;
+    }
 }
 
 
@@ -161,6 +223,9 @@ margin-bottom: 24px;
     color: #5B3218;
 }
 
+@media screen and (min-width: 768px){
+
+}
 
 /* === certificates === */
 
