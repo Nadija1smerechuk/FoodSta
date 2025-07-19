@@ -382,6 +382,32 @@ margin-bottom: 24px;
     transform: scale(1.03);
 }
 
+/* .swiper-button-next,
+.swiper-button-prev {
+    color: #72a853;
+    width: 36px;
+    height: 36px;
+} */
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #72a853;
+    width: 16px;
+    height: 16px;
+    
+}
+
+
+.swiper-pagination-bullet {
+    background: #72a853;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #5B3218;
+}
+
+
 
 /* ==== contact === */
 
