@@ -110,6 +110,10 @@ img {
     .nav-link{
         font-size: 24px;
     }
+    
+    .menu-nav{
+        gap: 24px;
+    }
 
 
 
@@ -454,7 +458,6 @@ margin-bottom: 24px;
 
 .contact{
     padding: 24px 0;
-    background-color: white;
 }
 
 .contact-title{
@@ -474,9 +477,15 @@ margin-bottom: 24px;
 .footer{
     background-color: #72a853;
     padding: 24px 0;
+    text-align: center;
 }
 
-
+.footer-media{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 .footer-social {
@@ -500,7 +509,7 @@ margin-bottom: 24px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #fff;
+    color: #5B3218;
     margin-bottom: 16px;
 
 }
@@ -513,7 +522,7 @@ margin-bottom: 24px;
 
 .social-media-footer {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     align-items: center;
 }
 
@@ -540,4 +549,44 @@ margin-bottom: 24px;
 
 .icon-social {
     fill: #f4f4fd;
+}
+
+
+/* === forma === */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #72a853;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #579036;
+}
+.contact-form button:focus {
+    background-color: #579036;
+}
+
+
+.footer-text{
+    font-size: 10px;
 }

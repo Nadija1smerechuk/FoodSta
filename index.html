@@ -314,50 +314,57 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="contact-title">КОНТАКТИ</h2>
-
-            <div class="footer-media">
-                <p class="footer-text-social">Social media</p>
+            <div>
+                <form action="https://formspree.io/f/xblkdkna" method="POST" class="contact-form">
+                    <label for="name">Ваше ім’я:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                
+                    <button type="submit">Надіслати</button>
+                </form>
             
-                <ul class="social-media-footer">
+
+                <div class="footer-media">
+                    <h3 class="footer-text-social">СОЦІАЛЬНІ МЕРЕЖІ</h3>
+            
+                    <ul class="social-media-footer">
                     
-                    <li class="footer-icon-social">
-                        <a class="footer-icon" href="https://www.facebook.com/nadia.smerecuk" target="_blank" rel="noopener noreferrer nofollow">
-                            <svg class="icon-social" width="24" height="24">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-icon-social">
-                        <a class="footer-icon" href="https://www.linkedin.com/in/nadiia-smerechuk/" target="_blank" rel="noopener noreferrer nofollow">
-                            <svg class="icon-social" width="24" height="24">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-icon-social">
-                        <a class="footer-icon" href="https://www.instagram.com/nadiyasmerechuk" target="_blank" rel="noopener noreferrer nofollow">
-                            <svg class="icon-social" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                        <li class="footer-icon-social">
+                            <a class="footer-icon" href="https://www.facebook.com/nadia.smerecuk" target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="icon-social" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icon-social">
+                            <a class="footer-icon" href="https://www.linkedin.com/in/nadiia-smerechuk/" target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="icon-social" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icon-social">
+                            <a class="footer-icon" href="https://www.instagram.com/nadiyasmerechuk" target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="icon-social" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-<!--             
-            <address class="address">
-                <ul class="contact-list">
-                    <li class="contact-item">Email: <a href="mailto:nadiya.art@gmail.com">nadiya1smerechuk@gmail.com</a></li>
-                    <li class="contact-item">Телефон: <a href="tel:+380501234567">+38 (098) 798-24-86</a></li>
-                    <li class="contact-item">Instagram: <a href="https://instagram.com/nadiya_art">@nadiyasmerechuk</a></li>
-                </ul>
-            </address> -->
         </div>
     </section>
 </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-text">
             &copy; 2025 Надія Смеречук — Всі права захищені.
         </div>
     </footer>
