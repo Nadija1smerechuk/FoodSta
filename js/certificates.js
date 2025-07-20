@@ -20,5 +20,8 @@ const images = document.querySelectorAll('#certificate-slider img');
   });
 
   // Показати перше зображення при завантаженні
-  showImage(current);
+showImage(current);
+  
+
+
 
