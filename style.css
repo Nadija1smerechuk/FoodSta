@@ -260,13 +260,13 @@ margin-bottom: 24px;
     margin-bottom: 20px;
 }
 
-.logos {
+.certificate-slider {
     position: relative;
     height: auto;
     max-width: 100%;
 }
 
-.logos img {
+.certificate-slider img {
     display: none;
     max-width: 100%;
     height: auto;
@@ -274,7 +274,7 @@ margin-bottom: 24px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logos img.active {
+.certificate-slider img.active {
     display: block;
 }
 
@@ -305,6 +305,36 @@ margin-bottom: 24px;
     background-color: #579036;
 }
 
+
+/* Стилі для оверлею (збільшеного зображення)  */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(74, 77, 75, 0.9); 
+z-index: 1000;
+align-items: center;
+justify-content: center;
+}
+
+.enlarged-image {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+}
 
 
 /* ==== lessons ==== */
@@ -553,6 +583,7 @@ margin-bottom: 24px;
 
 
 /* === forma === */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -568,6 +599,7 @@ margin-bottom: 24px;
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+
 
 .contact-form button {
     padding: 10px;
@@ -589,4 +621,19 @@ margin-bottom: 24px;
 
 .footer-text{
     font-size: 10px;
+}
+
+
+.form-message {
+    margin-top: 15px;
+    font-size: 16px;
+    display: none;
+}
+
+.form-message.success {
+    color: #579036;
+}
+
+.form-message.error {
+    color: red;
 }

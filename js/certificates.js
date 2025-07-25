@@ -23,5 +23,25 @@ const images = document.querySelectorAll('#certificate-slider img');
 showImage(current);
   
 
+const certificateImages = document.querySelectorAll('.certificate-image');
+const overlay = document.getElementById('overlay');
+const enlargedImage = document.getElementById('enlarged-image');
+const closeButton = document.querySelector('.close-button');
 
+certificateImages.forEach(image => {
+    image.addEventListener('click', () => {
+        enlargedImage.src = image.src;
+        overlay.style.display = 'flex'; // Показуємо оверлей
+    });
+});
+
+closeButton.addEventListener('click', () => {
+    overlay.style.display = 'none'; // Ховаємо оверлей
+});
+
+overlay.addEventListener('click', (event) => {
+    if (event.target === overlay) { // Закриваємо оверлей, якщо клікнули поза зображенням
+      overlay.style.display = 'none';
+    }
+});
 
