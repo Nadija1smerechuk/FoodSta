@@ -45,3 +45,58 @@ overlay.addEventListener('click', (event) => {
     }
 });
 
+// const images = document.querySelectorAll('#certificate-slider img');
+// const prevBtn = document.getElementById('prev-btn');
+// const nextBtn = document.getElementById('next-btn');
+
+// let currentPage = 0;
+// let itemsPerPage = getItemsPerPage();
+
+// function getItemsPerPage() {
+//   const width = window.innerWidth;
+//   if (width >= 1440) return 3;
+//   if (width >= 768) return 2;
+//   return 1;
+// }
+
+// function showImages() {
+//   images.forEach(img => img.classList.remove('active'));
+
+//   const start = currentPage * itemsPerPage;
+//   const end = start + itemsPerPage;
+
+//   images.forEach((img, index) => {
+//     if (index >= start && index < end) {
+//       img.classList.add('active');
+//     }
+//   });
+
+//   prevBtn.disabled = currentPage === 0;
+//   nextBtn.disabled = end >= images.length;
+// }
+
+// prevBtn.addEventListener('click', () => {
+//   if (currentPage > 0) {
+//     currentPage--;
+//     showImages();
+//   }
+// });
+
+// nextBtn.addEventListener('click', () => {
+//   if ((currentPage + 1) * itemsPerPage < images.length) {
+//     currentPage++;
+//     showImages();
+//   }
+// });
+
+// window.addEventListener('resize', () => {
+//   const newItemsPerPage = getItemsPerPage();
+//   if (newItemsPerPage !== itemsPerPage) {
+//     itemsPerPage = newItemsPerPage;
+//     currentPage = 0;
+//     showImages();
+//   }
+// });
+
+// // Показати перші зображення при завантаженні
+// showImages();

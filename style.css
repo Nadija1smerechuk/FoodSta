@@ -78,6 +78,7 @@ img {
         padding: 12px 0;
         cursor: pointer;
         display: block;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover {
     color: #5B3218;
@@ -115,7 +116,15 @@ img {
         gap: 24px;
     }
 
-
+@media screen and (min-width: 1158px){
+    .nav-link {
+            font-size: 36px;
+        }
+    
+        .menu-nav {
+            gap: 36px;
+        }
+}
 
 
 }
@@ -168,9 +177,28 @@ img {
     .hero-title{
         margin-top:  36px;
         margin-bottom: 36px;
+        line-height: 1.5;
     }
 }
 
+@media screen and (min-width: 1158px){
+    .hero-title {
+            margin-top: 48px;
+            margin-bottom: 48px;
+            line-height: 1.8;
+        }
+    
+    .hero-text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            max-width: 364px;
+            margin-bottom: 16px;
+            text-align: justify;
+            margin: 0 auto;
+        }
+}
 
 /* ====  section about ===== */
 
@@ -235,23 +263,69 @@ margin-bottom: 24px;
         display: flex;
         flex-direction: row;
         gap: 18px;
+        align-items: baseline;
     }
 
     .skills{
         max-width: 100%;
+        padding-top: 48px;
+    }
+
+    .skills-list-text{
+        font-size: 18px;
     }
 }
 
-/* === certificates === */
+@media screen and (min-width: 1158px) {
+    .about-content {
+        /* max-width: 1158px; */
+        margin: 0 auto;
+        /* display: flex; */
+        justify-content: space-between;
+        gap: 40px;
+        align-items: flex-start;
+    }
 
-.certificates-img{
-    width: 156px;
+    .section-about-text {
+        flex: 1;
+        max-width: 640px;
+    }
+
+    .about-title{
+        margin-top: 24px;
+        font-size: 28px;
+    }
+
+    .about-text {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .skills {
+        flex: 1;
+        padding: 32px;
+        max-width: 440px;
+        border-radius: 8px;
+        margin-top: 36px;
+    }
+
+    .skills-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .skills-list-text {
+        font-size: 18px;
+        margin-top: 12px;
+    }
 }
 
 
+/* === certificates === */
+
+
 .certificates {
-    padding: 30px 15px;
-    /* background-color: #f9f9f9; */
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -270,8 +344,11 @@ margin-bottom: 24px;
     display: none;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .certificate-slider img.active {
@@ -284,6 +361,7 @@ margin-bottom: 24px;
     justify-content: center;
     gap: 10px;
     margin-top: 15px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pagination-buttons button {
@@ -294,7 +372,7 @@ margin-bottom: 24px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pagination-buttons button:hover {
@@ -314,10 +392,14 @@ margin-bottom: 24px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(74, 77, 75, 0.9); 
+    background-color: rgba(4, 4, 4, 0.8); 
 z-index: 1000;
 align-items: center;
 justify-content: center;
+transition:
+        opacity 700ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 700ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 700ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .enlarged-image {
@@ -325,6 +407,15 @@ justify-content: center;
     max-height: 90%;
     border: 2px solid white;
     border-radius: 5px;
+    transition:
+            transform 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Плавне зростання при появі оверлею */
+.overlay.show .enlarged-image {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .close-button {
@@ -334,7 +425,27 @@ justify-content: center;
     font-size: 3em;
     color: white;
     cursor: pointer;
+    transition: color 300ms ease, opacity 300ms ease;
 }
+
+.close-button:hover {
+    color: #ffcccc;
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 1158px){
+    .certificates-title{
+        font-size: 28px;
+    }
+
+        .pagination-buttons button {
+            padding: 8px 18px;
+            font-size: 12px;
+        }
+    
+}
+
 
 
 /* ==== lessons ==== */
@@ -382,7 +493,8 @@ justify-content: center;
     padding: 6px 12px;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .more-btn:hover {
@@ -391,19 +503,6 @@ justify-content: center;
 .more-btn:focus {
     background-color: #579036;
 }
-
-/* @media screen and (min-width: 768px) {
-    .lessons-cards{
-        display: flex;
-        flex-direction: row;
-        gap: 12px;
-        
-    }
-
-    .lessons-cards-item{
-        width: calc((100% - 24px) / 5);
-    }
-} */
 
 
 .lessons-cards {
@@ -422,6 +521,18 @@ justify-content: center;
     }
 
 }
+
+@media screen and (min-width: 1158px){
+    .lessons-title {
+            font-size: 28px;
+            margin-bottom: 24px;
+            margin-bottom: 24px;
+        }
+}
+
+
+
+
 /* ===  gallery ==== */
 
 .gallery{
@@ -451,18 +562,11 @@ justify-content: center;
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-cards img:hover {
     transform: scale(1.03);
 }
-
-/* .swiper-button-next,
-.swiper-button-prev {
-    color: #72a853;
-    width: 36px;
-    height: 36px;
-} */
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -471,7 +575,6 @@ justify-content: center;
     height: 16px;
     
 }
-
 
 .swiper-pagination-bullet {
     background: #72a853;
@@ -482,7 +585,13 @@ justify-content: center;
     background: #5B3218;
 }
 
-
+@media screen and (min-width: 1158px){
+    .gallery-title{
+        font-size: 28px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
 
 /* ==== contact === */
 
@@ -581,6 +690,20 @@ justify-content: center;
     fill: #f4f4fd;
 }
 
+@media screen and (min-width: 768px){
+    .footer-text-social{
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-width: 1158px){
+    .contact-title{
+        font-size: 28px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
 
 /* === forma === */
 
@@ -636,4 +759,10 @@ justify-content: center;
 
 .form-message.error {
     color: red;
+}
+
+@media screen and (min-width: 768px){
+    .footer-text {
+            font-size: 16px;
+        }
 }
