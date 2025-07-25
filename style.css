@@ -74,17 +74,17 @@ img {
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #72a853;
+        color: #5B3218;
         padding: 12px 0;
         cursor: pointer;
         display: block;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover {
-    color: #5B3218;
+    color: #579036;
 }
 .nav-link:focus {
-    color: #5B3218;
+    color: #579036;
 }
 
 @media screen and (min-width: 768px){
@@ -368,7 +368,7 @@ margin-bottom: 24px;
     padding: 6px 16px;
     font-size: 10px;
     background-color: #72a853;
-    color: #5B3218;
+    color: #0B0804;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -429,7 +429,7 @@ transition:
 }
 
 .close-button:hover {
-    color: #ffcccc;
+    color: rgb(203, 207, 164);
     opacity: 1;
 }
 
@@ -488,7 +488,7 @@ transition:
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #72a853;
-    color: #5B3218;
+    color: #0B0804;
     border: none;
     padding: 6px 12px;
     border-radius: 6px;
@@ -727,7 +727,7 @@ transition:
 .contact-form button {
     padding: 10px;
     font-size: 16px;
-    background-color: #72a853;
+    background-color: #5B3218;
     color: white;
     border: none;
     border-radius: 6px;
@@ -755,6 +755,7 @@ transition:
 
 .form-message.success {
     color: #579036;
+    justify-content: center;
 }
 
 .form-message.error {
