@@ -157,6 +157,7 @@ img {
     max-width: 364px;
     margin-bottom: 16px;
     text-align: justify;
+    color: #0B0804;
 }
 
 .hero-img{
@@ -222,7 +223,6 @@ margin-bottom: 24px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* max-width: 364px; */
     margin-bottom: 24px;
     text-align: justify;
     color: #5B3218;
@@ -278,9 +278,7 @@ margin-bottom: 24px;
 
 @media screen and (min-width: 1158px) {
     .about-content {
-        /* max-width: 1158px; */
         margin: 0 auto;
-        /* display: flex; */
         justify-content: space-between;
         gap: 40px;
         align-items: flex-start;
@@ -579,10 +577,19 @@ transition:
 .swiper-pagination-bullet {
     background: #72a853;
     opacity: 1;
+    width: 12px;
+    height: 12px;
 }
 
 .swiper-pagination-bullet-active {
     background: #5B3218;
+
+}
+@media screen and (min-width: 768px){
+    .swiper-pagination-bullet {
+            width: 16px;
+            height: 16px;
+        }
 }
 
 @media screen and (min-width: 1158px){
@@ -591,7 +598,14 @@ transition:
         margin-top: 24px;
         margin-bottom: 24px;
     }
+
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+        }
 }
+
+
 
 /* ==== contact === */
 
