@@ -574,11 +574,19 @@ transition:
     
 }
 
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* ВІДСТАНЬ між кружечками */
+}
+
 .swiper-pagination-bullet {
     background: #72a853;
     opacity: 1;
     width: 12px;
     height: 12px;
+    margin: 0;
 }
 
 .swiper-pagination-bullet-active {
@@ -589,6 +597,11 @@ transition:
     .swiper-pagination-bullet {
             width: 16px;
             height: 16px;
+            margin: 0 8px;
+        }
+
+        .swiper-pagination {
+            gap: 16px;
         }
 }
 
@@ -602,6 +615,10 @@ transition:
         .swiper-pagination-bullet {
             width: 20px;
             height: 20px;
+        }
+
+        .swiper-pagination {
+            gap: 18px;
         }
 }
 
